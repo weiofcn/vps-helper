@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>vps-helper</title>
+  <link rel="stylesheet" href="../static/lib/bootstrap4/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/css/main.css" />
+  <script src="../static/lib/bootstrap4/js/jquery-3.2.1.min.js"></script>
+  <script src="../static/lib/bootstrap4/js/popper-1.12.5.min.js"></script>
+  <script src="../static/lib/bootstrap4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <form>
+      <div class="form-group row">
+        <label for="ip" class="col-sm-2 col-form-label">服务器地址：</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="ip" placeholder="192.168.1.1">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="port" class="col-sm-2 col-form-label">服务器端口：</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="port" placeholder="8089">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="port" class="col-sm-2 col-form-label">密码：</label>
+        <div class="col-sm-4">
+          <input type="password" class="form-control" id="passwd" placeholder="密码">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="port" class="col-sm-2 col-form-label">加密方式：</label>
+        <div class="col-sm-4">
+          <select class="custom-select">
+            <option selected>aes-256-cfb</option>
+            <option value="1">rc4-md5</option>
+            <option value="2">aes-128-cfb</option>
+        </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="port" class="col-sm-2 col-form-label">超时时间：</label>
+        <div class="col-sm-4">
+          <input type="password" class="form-control" id="time_out" placeholder="300秒">
+        </div>
+      </div>
+
+    </form>
+
+    <a class="btn btn-warning" href="../index.html" role="button">放弃</a>
+    <a class="btn btn-primary" href="../index.html" role="button">安装</a>
+
+  </div>
+</body>
+
+</html>

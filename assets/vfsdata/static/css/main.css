@@ -1,0 +1,49 @@
+.container{
+    width:800px; 
+    height:600px;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.left-area{
+    float: left;
+    /*border: 1px solid gray;*/
+}
+
+.right-area{
+    float: right;
+    /*border: 1px solid gray;*/
+}
+
+.repository-list{
+    width: 400px;
+}
+
+.host-info, .service-info{
+    width: 300px;
+}
+/*
+.card-body {
+    line-height: auto;
+}
+*/
+.service-title {
+    font-size: 20px;
+}
+
+.service-intro {
+    font-size: 10px;
+}
+
+.service-install-btn {
+    font-size: 10px;
+    width: 50px;
+}
+
+.progress-bar{
+    width: 100%;
+}

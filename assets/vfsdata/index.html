@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>vps-helper</title>
+  <link rel="stylesheet" href="static/lib/bootstrap4/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="static/css/main.css" />
+  <script src="static/lib/bootstrap4/js/jquery-3.2.1.min.js"></script>
+  <script src="static/lib/bootstrap4/js/popper-1.12.5.min.js"></script>
+  <script src="static/lib/bootstrap4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="left-area">
+      <div class="repository-list">
+        <h3>服务仓库</h3>
+
+        <!-- The first item which shows on the respository list -->
+        <div class="card">
+          <h4 class="card-title service-title">Shadowsocks</h4>
+          <p class="card-text service-intro">非常强大的翻墙工具，可用来实现谷歌访问。</p>
+          <div class="row">
+            <div class="col-sm-10">
+              <a href="template/shadowsocks.html" class="btn btn-outline-primary btn-sm service-install-btn">安装</a>
+              <a href="#" class="btn btn-outline-primary btn-sm service-install-btn">来源</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- The second item which shows on the respository list -->
+        <div class="card">
+          <h4 class="card-title service-title">vps-helper-service</h4>
+          <p class="card-text service-intro">显示VPS上的基本信息。</p>
+          <div class="row">
+            <div class="col-sm-10">
+              <a href="template/vps-helper-service.html" class="btn btn-outline-primary btn-sm service-install-btn">安装</a>
+              <a href="#" class="btn btn-outline-primary btn-sm service-install-btn">来源</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="right-area">
+      <div class="host-info">
+        <h3>主机信息</h3>
+        <div class="card">
+
+          <div class="card-body">处理器：<span id="cpu"></span></div>
+          <div class="card-body bg-light">内存：<span id="mem"></span></div>
+          <div class="card-body">硬盘：<span id="hd"></span></div>
+          <div class="card-body bg-light">网络：<span id="net"></span></div>
+          <div class="card-body">系统：<span id="os"></span></div>
+          <div class="card-body bg-light">IP：<span id="ip"></span></div>
+        </div>
+      </div>
+
+      <div class="service-info">
+        <h3>服务状态</h3>
+        <div class="card">
+          <div class="card-body bg-success text-white">SSHD</div>
+          <div class="card-body bg-danger text-white">HTTP</div>
+          <div class="card-body bg-success text-white">FTP</div>
+          <div class="card-body bg-warning text-white">Shadowsocks</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
